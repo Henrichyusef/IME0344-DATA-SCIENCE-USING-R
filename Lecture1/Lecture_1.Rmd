@@ -1,7 +1,7 @@
 ---
 title: "Lecture 1 - An Introduction to Data Science"
-subtitle: "Presentation about the paper: '50 Years of Data Science' written by David Donoho (2017)."
-author: "Renato Rodrigues Silva"
+subtitle: "'50 Years of Data Science' written by David Donoho (2017)."
+author: " Presented by Renato Rodrigues Silva"
 institute: "Federal University of Goias."
 date: "(updated: `r Sys.Date()`)"
 output:
@@ -21,21 +21,39 @@ output:
 
 ## The website for DSI gives us an idea what data science is:
 
-"This coupling of scientific discovery and practice involves:
+- "This coupling of scientific discovery and practice involves:
 the collection, management, processing, analysis, visualization, and 
 interpretation of vast amounts of heterogeneous data associated with a diverse array of scientific, translational, and inter-disciplinary applications.”
 
-##Definition from Data Science Association’s 
-
-“Data Scientist” means a professional who uses scientific methods to liberate and create meaning from raw data.
-
----
-#Data Science Initiative - University of Michigan (2015)
 
 ## A number of DSI-like initiatives started recently, including:
 
 - Campus-wide initiatives at NYU, Columbia, MIT,
 - New master’s degree programs in data science, for example, at Berkeley, NYU, Stanford, Carnegie Mellon, University of Illinois, ...
+
+---
+class: inverse, center, middle
+#Data Science “Versus” Statistics
+
+---
+#Data Science “Versus” Statistics
+
+##Definition from Data Science Association’s 
+
+“Data Scientist” means a professional who uses scientific methods to liberate and create meaning from raw data.
+
+##Definition of the statistics (Donoho, 2017)
+
+“Statistics” means the practice or science of collecting and analyzing numerical data in large quantities.
+
+---
+#Data Science “Versus” Statistics
+
+- To a statistician, the definition of the data science sounds an awful lot like what applied statisticians do: use methodology to make inferences from data. 
+- To a statistician, this definition of statistics seems already to encompass anything that the definition of data scientist might encompass, 
+- But the definition of statistician seems limiting, since a lot of statistical work is explicitly about inferences to be made from very small samples — this been true for hundreds of years, really. 
+- In fact, statisticians deal with data however it arrives — big or small.
+
 
 ---
 class: inverse, center, middle
@@ -52,74 +70,44 @@ class: center, bottom, inverse
 When physicists do mathematics, they don’t say they’re doing number science. They’re doing math. If you’re analyzing data, you’re doing statistics." (Karl Broman)
 
 ---
-background-image: url("Lecture_1_files/figure-html/Fig2.jpeg")
-background-size: 85%
-class: center, middle, inverse
+#Andrew Gelman and Jeff Leek
 
-- "Statistics is the least important part of data science." (Andrew Gelman)
+- "Statistics is the least important part of data science." (**Andrew Gelman**)
 [url](https://statmodeling.stat.columbia.edu/2013/11/14/statistics-least-important-part-data-science/)
 
----
-background-image: url("Lecture_1_files/figure-html/Fig3.jpeg")
-background-size: 85%
-class: center, middle, inverse
+- I would rephrase as: “Statistics, properly defined, is a key part of data science”. Statistics should incorporate statistical software development, data munging, reproducibility, visualization, and report writing. That is most of the data science pipeline. Just my 2 cents. (**Jeff Leek**) [url](https://simplystatistics.org/)
 
-- I would rephrase as: “Statistics, properly defined, is a key part of data science”. Statistics should incorporate statistical software development, data munging, reproducibility, visualization, and report writing. That is most of the data science pipeline. Just my 2 cents. (Jeff Leek) [url](https://simplystatistics.org/)
+- "Interesting point on expanding the boundaries of statistics. To me, “statistics” already includes visualization and software development. Maybe also data munging too, but I’m not quite sure what that is!" (**Andrew Gelman**)
 
----
+- "For example, suppose a researcher writes a program to scrape some data off the web. I don’t know how to do this, and I’ve not thought about it as a statistical skill, but maybe it is, and my views have just been too limited." (**Andrew Gelman**)
 
-background-image: url("Lecture_1_files/figure-html/Fig2.jpeg")
-background-size: 85%
-class: center, middle, inverse
-
-- "Interesting point on expanding the boundaries of statistics. To me, “statistics” already includes visualization and software development. Maybe also data munging too, but I’m not quite sure what that is!"
-
-- "For example, suppose a researcher writes a program to scrape some data off the web. I don’t know how to do this, and I’ve not thought about it as a statistical skill, but maybe it is, and my views have just been too limited."
-
-- "Certainly I feel very strongly that visualization and software development are part of statistics, and I get annoyed when people don’t want to count it as statistics."
+- "Certainly I feel very strongly that visualization and software development are part of statistics, and I get annoyed when people don’t want to count it as statistics." (**Andrew Gelman**)
 
 ---
-background-image: url("Lecture_1_files/figure-html/Fig3.jpeg")
-background-size: 85%
-class: center, middle, inverse 
+#Andrew Gelman and Jeff Leek
 
-- "Data munging is just another way to say data cleaning. I think that is a critical part of statistics since it helps you understand many sources of hidden variation/bias you might miss if you only have the cleaned data."
+- "Data munging is just another way to say data cleaning. I think that is a critical part of statistics since it helps you understand many sources of hidden variation/bias you might miss if you only have the cleaned data." (**Jeff Leek**)
 
-- "I think scraping data from the web is now a necessary/default skill we should be teaching statisticians, much the way software development wasn’t considered “core” but now is."
+- "I think scraping data from the web is now a necessary/default skill we should be teaching statisticians, much the way software development wasn’t considered “core” but now is." (**Jeff Leek**)
 
-- "I think we agree that if we define our field narrowly then of course it is less important and that may cause us to become obsolete."
+- "I think we agree that if we define our field narrowly then of course it is less important and that may cause us to become obsolete." (**Jeff Leek**)
 
----
-background-image: url("Lecture_1_files/figure-html/Fig5.jpeg")
-background-size: 85%
-class: center, bottom, middle, inverse
-
-- "Data science is an exciting discipline that allows you to turn raw data into understanding, insight, and knowledge." (Hadley Wickham)
 
 ---
 class: inverse, center, middle
-#The Future of Data Analysis, 1962 (John, Tukey)
+#The Future of Data Analysis, 1962 (John Tukey)
 
 ##The Annals of Mathematical Statistics
 
 ---
-background-image: url("Lecture_1_files/figure-html/Fig4.jpeg")
-background-size: 85%
-class: center, bottom, inverse 
+#John Tukey
 
 - "For a long time I have thought I was a statistician, interested in inferences from the particular to the general."
 - "But as I have watched mathematical statistics evolve, I have had cause to wonder and to doubt."
 
-
----
-background-image: url("Lecture_1_files/figure-html/Fig4.jpeg")
-background-size: 85%
-class: center, bottom, inverse
-
-
 - "...All in all I have come to feel that my central interest is in data analysis, which I take to include, among other things: 
 
-- "Procedures for analyzing data, techniques for interpreting the results of such procedures, ways of planning the gathering of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data".
+- "Procedures for analyzing data, techniques for interpreting the results, ways of planning the gathering of data and all the machinery and results of (mathematical) statistics which apply to analyzing data".
 
 ---
 #The Future of Data Analysis, 1962 (John, Tukey)
@@ -147,9 +135,7 @@ class: inverse, center, middle
 #“Greater or Lesser Statistics, A Choice for Future Research.” (John Chambers)
 
 ---
-background-image: url("Lecture_1_files/figure-html/Fig7.jpeg")
-background-size: 85%
-class: center, bottom, inverse
+#“Greater or Lesser Statistics, A Choice for Future Research.” (John Chambers)
 
 - "The statistics profession faces a choice in its future research between continuing concentration on traditional topics — based largely on data analysis supported by mathematical statistics — and a broader viewpoint — based on an inclusive concept of learning from data".
 
@@ -167,9 +153,7 @@ class: inverse, center, middle
 ##“Statistical Modeling: The Two Cultures,”  (Statistical Science)
 
 ---
-background-image: url("Lecture_1_files/figure-html/Fig8.jpeg")
-background-size: 85%
-class: center, bottom, inverse
+##“Statistical Modeling: The Two Cultures,”  (Leo Breiman)
 
 - "Statistics starts with data".
 
@@ -198,17 +182,9 @@ class: center, bottom, inverse
 - The relatively recent discipline of machine learning, often sitting within computer science departments, is identified by Breiman as the epicenter of the predictive modeling culture.
 
 ---
-background-image: url("Lecture_1_files/figure-html/Fig9.jpeg")
-background-size: 85%
-class: center, bottom, inverse
-
+#Comments : Sir. David Cox and Bradley Efron
 
 - Sir. David Cox states that in his view, “predictive success ...is not the primary basis for model choice” and that “formal methods of model choice that take no account of the broader objectives are suspect ..."
-
----
-background-image: url("Lecture_1_files/figure-html/Fig10.jpeg")
-background-size: 85%
-class: center, bottom, inverse
 
 - Efron stated that “Prediction is certainly an interesting subject but Leo’s article overstates both its role and our profession’s lack of interest in it.”
 
