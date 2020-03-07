@@ -14,7 +14,7 @@ class: center, middle, inverse, title-slide
 # Lecture 3 - An Introduction to Data Science (part II)
 ### Presented by Renato Rodrigues Silva
 ### Federal University of Goias.
-### (updated: 2020-03-06)
+### (updated: 2020-03-07)
 
 ---
 
@@ -642,10 +642,22 @@ or
 
 `&gt; dataTAB &lt;-read.table("survey.txt", header=TRUE, sep= "\t")`
 
-- Further details can be found typing `?read.table` on the RStudio console or in [import](https://cran.r-project.org/doc/manuals/r-release/R-data.html#Variations-on-read_002etable).
+- Further details can be found typing `?read.table` on the RStudio console or in [manual](https://cran.r-project.org/doc/manuals/r-release/R-data.html#Variations-on-read_002etable).
 
 - Lecture about how to represent characters in computer memories. [lecture12](https://www.youtube.com/watch?v=kW_vetzPU_I),
 [utf8](https://www.youtube.com/watch?v=sqPTR_v4qFA&amp;t=551s).
+
+- A intersting article about enconding [kunststube](http://kunststube.net/encoding/) 
+
+---
+class: middle
+##Reading comma delimited files
+
+- `read.csv()` reads comma delimited files, 
+
+- `read.csv2()` reads semicolon separated files (common in countries where , is used as the decimal place).
+
+- However, we are going to use tidyverse packages to import data.
 
 ---
 class: inverse, center, middle
@@ -654,7 +666,7 @@ class: inverse, center, middle
 ---
 #Tidyverse
 
-- The tidyverse is an opinionated **collection of R packages** designed **for data science**. 
+- The tidyverse is a **collection of R packages** designed **for data science**. 
 
 - All packages share an underlying design philosophy, grammar, and data structures.
 
